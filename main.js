@@ -15,7 +15,7 @@ ipcMain.on('log-error', (event, msg) => {
 function createWindow() {
   mainWindow = new BrowserWindow({
     width: 450,
-    height: 800,
+    height: 450,
     transparent: true,
     frame: false,
     alwaysOnTop: true,
