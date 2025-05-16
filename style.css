@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+  
+  .button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    user-select: none;
+    pointer-events: none;
+    transition: box-shadow 0.2s, background 0.2s;
+    font-size: 14px;
+  }
+  
+  .glow {
+    box-shadow: 0 0 15px 5px rgba(0, 255, 0, 0.75);
+    background: rgba(0, 255, 0, 0.2);
+  }
+  
+  /* Button positions based on your CSS */
+  
+  #button-0 {
+    left: 207px;
+    top: 148px;
+  }
+  
+  #button-1 {
+    left: 264px;
+    top: 133px;
+  }
+  
+  #button-2 {
+    left: 203px;
+    top: 87px;
+  }
+  
+  #button-3 {
+    left: 264px;
+    top: 77px;
+  }
+  
+  #button-4 {
+    left: 380px;
+    top: 82px;
+  }
+  
+  #button-5 {
+    left: 324px;
+    top: 71px;
+  }
+  
+  #button-6 {
+    left: 376px;
+    top: 147px;
+  }
+  
+  #button-7 {
+    left: 324px;
+    top: 127px;
+  }
+  
+  #button-9 {
+    left: 110px;
+    top: 234px;
+  }
+  
+  #button-10 {
+    left: 234px;
+    top: 228px;
+  }
+  
+  #button-12 {
+    left: 161px;
+    top: 208px;
+  }
+  
+  #button-13 {
+    left: 71px;
+    top: 85px;
+  }
+  
+  #button-14 {
+    left: 21px;
+    top: 114px;
+  }
+  
+  #button-15 {
+    left: 119px;
+    top: 128px;
+  }
+
+  #drag-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-app-region: drag;
+    cursor: move;
+    z-index: 1000;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+  
+  .button, .label, .glow {
+    -webkit-app-region: no-drag;
+  }
